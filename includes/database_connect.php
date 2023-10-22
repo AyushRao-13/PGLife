@@ -6,3 +6,4 @@ if(mysqli_connect_error())
     echo "Failed to connect to MySQL! Please contact the admin.";
     return;
 }
+?>
