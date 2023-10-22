@@ -46,10 +46,10 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb py-2">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="property_list.html">Mumbai</a>
+                <a href="property_list.php">Mumbai</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
                 Ganpati Paying Guest
@@ -407,16 +407,16 @@
         <div class="page-container footer-container">
             <div class="footer-cities">
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Delhi</a>
+                    <a href="property_list.php">PG in Delhi</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Mumbai</a>
+                    <a href="property_list.php">PG in Mumbai</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Bangalore</a>
+                    <a href="property_list.php">PG in Bangalore</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Hyderabad</a>
+                    <a href="property_list.php">PG in Hyderabad</a>
                 </div>
             </div>
             <div class="footer-copyright">© 2020 Copyright PG Life </div>
