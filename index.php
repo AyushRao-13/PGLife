@@ -23,7 +23,7 @@ session_start();
     <div class="banner-container">
         <h2 class="white pb-3">Happiness per Square Foot</h2>
 
-        <form id="search-form">
+        <form id="search-form" method="GET" action="property_list.php">
             <div class="input-group city-search">
                 <input type="text" class="form-control input-city" id='city' name='city' placeholder="Enter your city to search for PGs" />
                 <div class="input-group-append">
