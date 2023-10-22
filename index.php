@@ -64,7 +64,7 @@
         </h1>
         <div class="row">
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php?city=Delhi">
                     <div class="city-card rounded-circle">
                         <img src="img/delhi.png" class="city-img" />
                     </div>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php?city=Mumbai">
                     <div class="city-card rounded-circle">
                         <img src="img/mumbai.png" class="city-img" />
                     </div>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php?city=Bangalore">
                     <div class="city-card rounded-circle">
                         <img src="img/bangalore.png" class="city-img" />
                     </div>
@@ -88,7 +88,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php?city=Hyderabad">
                     <div class="city-card rounded-circle">
                         <img src="img/hyderabad.png" class="city-img" />
                     </div>
@@ -230,16 +230,16 @@
         <div class="page-container footer-container">
             <div class="footer-cities">
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Delhi</a>
+                    <a href="property_list.php">PG in Delhi</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Mumbai</a>
+                    <a href="property_list.php">PG in Mumbai</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Bangalore</a>
+                    <a href="property_list.php">PG in Bangalore</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Hyderabad</a>
+                    <a href="property_list.php">PG in Hyderabad</a>
                 </div>
             </div>
             <div class="footer-copyright">© 2020 Copyright PG Life </div>
