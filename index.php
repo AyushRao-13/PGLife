@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,43 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome | PG Life</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-    <link href="css/common.css" rel="stylesheet" />
+    <?php
+    include "includes/head_links.php";
+    ?>
     <link href="css/home.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="header sticky-top">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.php">
-                <img src="img/logo.png" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signup-modal">
-                            <i class="fas fa-user"></i>Signup
-                        </a>
-                    </li>
-                    <div class="nav-vl"></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">
-                            <i class="fas fa-sign-in-alt"></i>Login
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div id="loading">
-    </div>
+    <?php
+    include "includes/header.php";
+    ?>
 
     <div class="banner-container">
         <h2 class="white pb-3">Happiness per Square Foot</h2>
