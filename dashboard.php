@@ -12,38 +12,9 @@
 </head>
 
 <body>
-<div class="header sticky-top">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.php">
-                <img src="img/logo.png" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
-                <ul class="navbar-nav">
-                    <div class='nav-name'>
-                        Hi, Aditya Sood
-                    </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">
-                            <i class="fas fa-user"></i>Dashboard
-                        </a>
-                    </li>
-                    <div class="nav-vl"></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-sign-out-alt"></i>Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div id="loading">
-    </div>
+    <?php
+    include "includes/header.php";
+    ?>
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb py-2">
@@ -148,7 +119,7 @@
                             <div class="rent-unit">per month</div>
                         </div>
                         <div class="button-container col-6">
-                            <a href="property_detail.html" class="btn btn-primary">View</a>
+                            <a href="property_detail.php" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -158,28 +129,9 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="page-container footer-container">
-            <div class="footer-cities">
-                <div class="footer-city">
-                    <a href="property_list.php?city=Delhi">PG in Delhi</a>
-                </div>
-                <div class="footer-city">
-                    <a href="property_list.php?city=Mumbai">PG in Mumbai</a>
-                </div>
-                <div class="footer-city">
-                    <a href="property_list.php?city=Bangalore">PG in Bangalore</a>
-                </div>
-                <div class="footer-city">
-                    <a href="property_list.php?city=Hyderabad">PG in Hyderabad</a>
-                </div>
-            </div>
-            <div class="footer-copyright">© 2020 Copyright PG Life </div>
-        </div>
-    </div>
+    <?php
+    include "includes/footer.php";
+    ?>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
