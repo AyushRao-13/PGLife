@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import FilterBar from './FilterBar';
+import FilterModal from './FilterModal';
+import PropertyCard from './PropertyCard';
+import NoProperty from './NoProperty';
+import { base_path } from './utils.js';
+
+class App extends Component{
+    
+    state = {
+        properties: [],
+        sort: "none",
+        filter: {
+            gender: "none"
+        }
+    };
+
+    componentDidMount() {
+        const search = window.location.search;
+        const params = new URLSearchParams(search);
+        const city_name = params.get('city');
+     
+        fetch(`${base_path}/api/get_properties_by_city.php?city=${city_name}`)
+          .then(response => response.json())
+          .then(responseData => {
+            this.setState({
+              properties: responseData
+            });
+        })
+          .catch(error => {
+            console.log('Error fetching and parsing data', error);
+          });
+    }
+
+    
 }
 
-export default App;
